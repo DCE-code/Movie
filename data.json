@@ -1,0 +1,30 @@
+[
+    {
+        "id": "nebula",
+        "title": "NEBULA",
+        "tagline": "The stars are closer than they look.",
+        "videoUrl": "https://youtube.com",
+        "bgClass": "nebula-bg",
+        "heroClass": "nebula-hero",
+        "cast": [
+            { "role": "THE DIRECTOR", "name": "Alex Reed", "num": "01" },
+            { "role": "THE VISION", "name": "Hoyte van Hoytema", "num": "02" },
+            { "role": "THE CAST", "name": "Lila Vance", "num": "03" },
+            { "role": "THE SCORE", "name": "M-83", "num": "04" }
+        ]
+    },
+    {
+        "id": "void",
+        "title": "THE VOID",
+        "tagline": "Nothing is as vast as the darkness.",
+        "videoUrl": "https://youtube.com",
+        "bgClass": "void-bg",
+        "heroClass": "void-hero",
+        "cast": [
+            { "role": "THE DIRECTOR", "name": "Elena Rostova", "num": "01" },
+            { "role": "THE VISION", "name": "Roger Deakins", "num": "02" },
+            { "role": "THE CAST", "name": "Kaelen Voss", "num": "03" },
+            { "role": "THE SCORE", "name": "Hans Zimmer", "num": "04" }
+        ]
+    }
+]
