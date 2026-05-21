@@ -1,0 +1,472 @@
+:root {
+  --bg: #050505;
+  --accent: #e1ff00;
+  --text: #ffffff;
+  --text-muted: rgba(255, 255, 255, 0.6);
+  --card-bg: rgba(255, 255, 255, 0.02);
+  --card-border: rgba(255, 255, 255, 0.07);
+  --focus-ring: 2px dashed var(--accent);
+}
+
+/* 1. Hardware Accelerated Reset Layer Optimization */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 2. Advanced WCAG Skip Engine Layout */
+.skip-to-content {
+  position: fixed;
+  top: -120px;
+  left: 24px;
+  background: var(--accent);
+  color: #000;
+  padding: 16px 28px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  z-index: 99999;
+  text-decoration: none;
+  transition: top 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.skip-to-content:focus {
+  top: 24px;
+  outline: var(--focus-ring);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+*:focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: 6px;
+}
+
+/* 3. Preloader Shutter Architecture */
+#cinema-preloader {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition:
+    opacity 0.6s cubic-bezier(0.25, 1, 0.5, 1),
+    visibility 0.6s;
+}
+
+#cinema-preloader.fade-out {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.preloader-text {
+  font-weight: 900;
+  letter-spacing: 0.5em;
+  font-size: clamp(0.85rem, 3.5vw, 1.1rem);
+  color: var(--accent);
+}
+
+/* 4. Glassmorphic Sticky Header Matrix Controls */
+.site-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: min(5vw, 40px);
+  z-index: 900;
+}
+
+.menu-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding: 12px;
+}
+
+.menu-toggle .bar {
+  width: 32px;
+  height: 2px;
+  background-color: var(--text);
+  transition:
+    background-color 0.3s,
+    transform 0.3s;
+}
+.menu-toggle:hover .bar {
+  background-color: var(--accent);
+}
+
+/* Accessible Flyout Panel System Configuration */
+.sidebar-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(100%, 450px);
+  height: 100vh;
+  background: #080808;
+  border-left: 1px solid rgba(255, 255, 255, 0.03);
+  z-index: 950;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: min(10vw, 60px);
+  transform: translateX(100%);
+  transition: transform 0.65s cubic-bezier(0.76, 0, 0.24, 1);
+  box-shadow: -20px 0 60px rgba(0, 0, 0, 0.8);
+}
+
+.sidebar-panel.active {
+  transform: translateX(0);
+}
+
+.sidebar-close {
+  position: absolute;
+  top: min(5vw, 40px);
+  right: min(5vw, 40px);
+  background: transparent;
+  border: none;
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.sidebar-close:hover {
+  color: var(--accent);
+}
+
+.sidebar-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.sidebar-links a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  transition:
+    color 0.3s,
+    transform 0.3s;
+  display: inline-block;
+}
+.sidebar-links a:hover {
+  color: var(--accent);
+  transform: translateX(10px);
+}
+
+/* 5. Production Scalable Parallax Section Framework Nodes */
+.hero-parallax {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 100px 24px;
+  overflow: hidden;
+}
+
+.parallax-viewport {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.layer {
+  position: absolute;
+  inset: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Clean Procedural Fallbacks mapping directly down runtime structures */
+.nebula-bg {
+  background-image: radial-gradient(
+    circle at center,
+    rgba(15, 15, 35, 0.75) 0%,
+    var(--bg) 85%
+  );
+}
+.nebula-hero {
+  background-image: radial-gradient(
+    circle at center,
+    transparent 30%,
+    var(--bg) 95%
+  );
+}
+.void-bg {
+  background-image: radial-gradient(
+    circle at center,
+    rgba(35, 15, 15, 0.75) 0%,
+    var(--bg) 85%
+  );
+}
+.void-hero {
+  background-image: radial-gradient(
+    circle at center,
+    transparent 30%,
+    var(--bg) 95%
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.movie-title-svg {
+  width: 100%;
+  max-width: Min(85vw, 800px);
+  height: auto;
+}
+
+.title-path {
+  font-size: 95px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  fill: var(--text);
+}
+
+.tagline {
+  font-size: clamp(0.85rem, 2.5vw, 1.25rem);
+  font-weight: 300;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin: 24px 0 48px;
+  color: var(--text-muted);
+}
+
+.play-trigger {
+  background: transparent;
+  border: 1px solid var(--text);
+  color: var(--text);
+  padding: clamp(14px, 2vw, 20px) clamp(32px, 5vw, 48px);
+  font-size: clamp(0.75rem, 1.5vw, 0.85rem);
+  font-weight: 700;
+  letter-spacing: 0.35em;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  text-transform: uppercase;
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.btn-arrow {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.play-trigger:hover {
+  color: #000;
+  border-color: var(--accent);
+  background: var(--accent);
+  box-shadow: 0 0 40px rgba(225, 255, 0, 0.35);
+}
+.play-trigger:hover .btn-arrow {
+  transform: translateX(8px);
+}
+
+/* 6. High-Fidelity Fluid Multi-Column Grid Architecture */
+.horizontal-scroll-section {
+  background-color: #030303;
+  padding: min(8vw, 80px) max(4vw, 20px);
+  width: 100vw;
+  border-top: 1px solid rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.scroll-track {
+  display: grid;
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /* Perfect responsive quad grid architecture */
+  gap: clamp(16px, 2.5vw, 32px);
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.cast-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  height: clamp(300px, 45vh, 400px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: clamp(24px, 3vw, 40px);
+  transition:
+    transform 0.5s cubic-bezier(0.25, 1, 0.5, 1),
+    border-color 0.5s,
+    box-shadow 0.5s;
+}
+
+.card-num {
+  font-size: 0.85rem;
+  font-weight: 900;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+}
+
+.cast-card h3 {
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+.cast-card p {
+  font-size: clamp(0.9rem, 1.5vw, 1.05rem);
+  color: var(--text-muted);
+  font-weight: 300;
+}
+
+.cast-card:hover,
+.cast-card:focus-visible {
+  transform: translateY(-10px);
+  border-color: var(--accent);
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+/* 7. Premium Theatre Curtain Presentation Module Layer */
+.video-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  display: flex;
+  visibility: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-overlay.active {
+  z-index: 9999;
+  visibility: visible;
+}
+
+.curtain-panel {
+  position: absolute;
+  width: 50.5%;
+  height: 100%;
+  background: #000;
+  transition: transform 0.9s cubic-bezier(0.76, 0, 0.24, 1);
+  z-index: 1;
+}
+
+.left-panel {
+  left: 0;
+  border-right: 1px solid rgba(225, 255, 0, 0.03);
+  transform: translateX(0);
+}
+.right-panel {
+  right: 0;
+  border-left: 1px solid rgba(225, 255, 0, 0.03);
+  transform: translateX(0);
+}
+
+.video-overlay.active .left-panel {
+  transform: translateX(-100%);
+}
+.video-overlay.active .right-panel {
+  transform: translateX(100%);
+}
+
+.video-stage {
+  position: relative;
+  width: min(94%, 1100px);
+  z-index: 2;
+  opacity: 0;
+  transform: scale(0.94);
+  transition:
+    transform 0.7s cubic-bezier(0.25, 1, 0.5, 1) 0.18s,
+    opacity 0.7s ease 0.18s;
+}
+
+.video-overlay.active .video-stage {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.close-video {
+  position: absolute;
+  top: -45px;
+  right: 0;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.close-video:hover {
+  color: var(--accent);
+}
+
+.video-responsive-ratio {
+  position: relative;
+  padding-bottom: 56.25%; /* Golden 16:9 Aspect Ratio Boundary Constraint */
+  height: 0;
+  background: #000;
+  box-shadow: 0 50px 100px rgba(0, 0, 0, 0.95);
+}
+
+.video-responsive-ratio iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* 8. Adaptive Display Breakpoint Calculations Matrix */
+@media (max-width: 1200px) {
+  .scroll-track {
+    grid-template-columns: repeat(2, 1fr);
+  } /* 2-Column Responsive Adaptive Grid Grid layout transformation */
+}
+
+@media (max-width: 650px) {
+  .scroll-track {
+    grid-template-columns: 1fr;
+  } /* Fluid full width column blocks layout assignment for compact screens */
+  .horizontal-scroll-section {
+    padding: 50px 20px;
+  }
+  .site-header {
+    padding: 20px;
+  }
+}
